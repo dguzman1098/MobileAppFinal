@@ -1,13 +1,13 @@
 import {createAppContainer} from 'react-navigation'
 import {createStackNavigator} from 'react-navigation-stack'
-import ViewCategory from '../screens/ViewCategory'
+import ViewNotes from '../screens/ViewNotes'
 import AddNotes from "../screens/AddNotes"
 import AddCategory from "../screens/AddCategory"
 
 
 const StackNavigator = createStackNavigator({
-    ViewCategory: {
-        screen: ViewCategory
+    ViewNotes: {
+        screen: ViewNotes
     },
 
     AddNotes: {
@@ -19,7 +19,7 @@ const StackNavigator = createStackNavigator({
     },
 }, 
     {
-        initialRouteName: 'ViewCategory',
+        initialRouteName: 'ViewNotes',
         headerMode: 'none'
     })
 
